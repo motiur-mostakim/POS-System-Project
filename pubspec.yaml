@@ -4,13 +4,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.10.1
+  sdk: ^3.10.0
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  mobile_scanner: ^6.0.4 # বারকোড স্ক্যানিংয়ের জন্য যোগ করা হলো
+  mobile_scanner: ^6.0.4
 
 dev_dependencies:
   flutter_test:

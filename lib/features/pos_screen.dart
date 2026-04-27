@@ -153,7 +153,7 @@ class _PosScreenState extends State<PosScreen>
         backgroundColor: const Color(0xFFD12053),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         title: Image.network(
-          "https://www.logo.wine/a/logo/BKash/BKash-bKash-Logo.wine.svg",
+          "https://wp.logos-download.com/wp-content/uploads/2022/01/BKash_Logo_icon-700x662.png",
           height: 60,
           color: Colors.white,
         ),
@@ -415,8 +415,9 @@ class _PosScreenState extends State<PosScreen>
             controller: scannerController,
             onDetect: (capture) {
               final barcodes = capture.barcodes;
-              if (barcodes.isNotEmpty && barcodes.first.rawValue != null)
+              if (barcodes.isNotEmpty && barcodes.first.rawValue != null) {
                 _onBarcodeScanned(barcodes.first.rawValue!);
+              }
             },
           ),
           Center(

@@ -24,9 +24,6 @@ class SaleConfirmationScreen extends StatelessWidget {
   }
 }
 
-//////////////////////////////////////////////////
-// TOP BAR
-//////////////////////////////////////////////////
 class _TopBar extends StatelessWidget {
   const _TopBar();
 
@@ -57,9 +54,6 @@ class _TopBar extends StatelessWidget {
   }
 }
 
-//////////////////////////////////////////////////
-// SCANNER SECTION
-//////////////////////////////////////////////////
 class ScannerSection extends StatelessWidget {
   const ScannerSection({super.key});
 
@@ -67,7 +61,6 @@ class ScannerSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        /// Background
         Positioned.fill(
           child: Image.network(
             "https://images.unsplash.com/photo-1586201375761-83865001e31c",
@@ -75,12 +68,9 @@ class ScannerSection extends StatelessWidget {
           ),
         ),
 
-        /// Dark overlay
         Positioned.fill(
           child: Container(color: Colors.black.withOpacity(0.5)),
         ),
-
-        /// Scanner Box
         Center(
           child: Container(
             width: 260,
@@ -98,7 +88,6 @@ class ScannerSection extends StatelessWidget {
           ),
         ),
 
-        /// LIVE badge
         Positioned(
           top: 20,
           left: 20,
@@ -119,7 +108,6 @@ class ScannerSection extends StatelessWidget {
           ),
         ),
 
-        /// Bottom buttons
         Positioned(
           bottom: 20,
           left: 0,
@@ -205,9 +193,6 @@ class _CircleBtn extends StatelessWidget {
   }
 }
 
-//////////////////////////////////////////////////
-// CART SECTION
-//////////////////////////////////////////////////
 class CartSection extends StatelessWidget {
   const CartSection({super.key});
 
@@ -215,7 +200,6 @@ class CartSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        /// Header
         Container(
           padding: const EdgeInsets.all(16),
           color: Colors.white,
@@ -229,7 +213,6 @@ class CartSection extends StatelessWidget {
           ),
         ),
 
-        /// Items
         Expanded(
           child: ListView(
             padding: const EdgeInsets.all(12),
@@ -242,7 +225,6 @@ class CartSection extends StatelessWidget {
           ),
         ),
 
-        /// Summary
         Container(
           padding: const EdgeInsets.all(16),
           color: Colors.white,
@@ -282,9 +264,6 @@ class CartSection extends StatelessWidget {
   }
 }
 
-//////////////////////////////////////////////////
-// CART ITEM
-//////////////////////////////////////////////////
 class CartItem extends StatelessWidget {
   final String title;
   final double price;

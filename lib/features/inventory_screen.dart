@@ -15,7 +15,7 @@ class InventoryScreen extends StatelessWidget {
             padding: const EdgeInsets.only(right: 12),
             child: CircleAvatar(
               backgroundImage: NetworkImage(
-                "https://i.pravatar.cc/150?img=3",
+                "https://www.vecteezy.com/vector-art/54048527-golden-frame-islamic-calligraphy-bismillah-in-the-name-of-allah",
               ),
             ),
           )

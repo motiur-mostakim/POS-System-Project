@@ -20,7 +20,7 @@ class ProductCard extends StatelessWidget {
                   borderRadius: const BorderRadius.vertical(
                       top: Radius.circular(12)),
                   child: Image.network(
-                    "https://picsum.photos/200",
+                    "https://www.vecteezy.com/vector-art/54048527-golden-frame-islamic-calligraphy-bismillah-in-the-name-of-allah",
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
@@ -49,7 +49,6 @@ class ProductCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                /// Title + Price
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
